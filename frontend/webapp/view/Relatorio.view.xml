@@ -1,0 +1,42 @@
+<!-- <mvc:View controllerName="app.inicio.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+    </Page>
+</mvc:View> -->
+
+<mvc:View
+    controllerName="sap.ui.app.inicio.controller.Relatorio"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App>
+        <Page title="Relatórios">
+            <VBox>
+                <Button text="Gerar Relatório" press="onGenerateReport" />
+                <Table items="{/relatorio/clientes}">
+                    <columns>
+                        <Column>
+                            <Text text="Nome" />
+                        </Column>
+                        <Column>
+                            <Text text="Email" />
+                        </Column>
+                        <Column>
+                            <Text text="Telefone" />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{nome}" />
+                                <Text text="{email}" />
+                                <Text text="{telefone}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </VBox>
+        </Page>
+    </App>
+</mvc:View>

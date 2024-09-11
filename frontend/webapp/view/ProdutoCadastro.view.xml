@@ -1,0 +1,26 @@
+<!-- <mvc:View controllerName="app.inicio.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+    </Page>
+</mvc:View> -->
+
+<mvc:View
+    controllerName="sap.ui.app.inicio.controller.ProdutoCadastro"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App>
+        <Page title="Cadastro de Produtos">
+            <VBox>
+                <Input placeholder="Nome do Produto" value="{/nome}" />
+                <Input placeholder="Descrição" value="{/descricao}" />
+                <Input placeholder="Preço" type="Number" value="{/preco}" />
+                <Button text="Salvar" press="onSaveProduto" />
+                <List items="{/produtos}">
+                    <StandardListItem title="{nome}" description="{descricao}" />
+                </List>
+            </VBox>
+        </Page>
+    </App>
+</mvc:View>

@@ -1,0 +1,25 @@
+<!-- <mvc:View controllerName="app.inicio.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <App id="app">
+    </App>
+</mvc:View> -->
+
+<mvc:View
+    controllerName="sap.ui.app.inicio.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <App id="app">
+        <pages>
+            <Page title="Cadastro e Relatórios">
+                <VBox>
+                    <Button text="Cadastrar Clientes" press="onNavToClientes" />
+                    <Button text="Cadastrar Produtos" press="onNavToProdutos" />
+                    <Button text="Gerar Relatórios" press="onNavToRelatorios" />
+                </VBox>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
